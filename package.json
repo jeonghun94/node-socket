@@ -1,0 +1,24 @@
+{
+  "name": "node-socket",
+  "version": "1.0.0",
+  "description": "Realtime Game with Node.js(feat SocketIO)",
+  "main": "index.js",
+  "repository": "https://github.com/jeonghun94/node-socket",
+  "author": "jeonghun94 <66016555+jeonghun94@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pug": "^3.0.2",
+    "socket.io": "^4.1.2"
+  },
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server"
+  },
+  "devDependencies": {
+    "eslint-plugin-prettier": "^3.4.0"
+  }
+}
