@@ -19,8 +19,7 @@ const server = app.listen(PORT, handleListening);
 
 const io = socketIO(server);
 
-let sockets = [];
-
 io.on("connection", socket => {
-    sockets.push(socket.id);
+    socket.on("test",  () =>  console.log("누가 접속 했엉"));
+    socket.emit("hi");
 });
